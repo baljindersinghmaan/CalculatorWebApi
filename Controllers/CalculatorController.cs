@@ -49,7 +49,7 @@ public class CalulatorController : ControllerBase
     [HttpGet("divide")]
     public decimal Divide([FromQuery] decimal left, [FromQuery] decimal right)
     {
-        return left * right;
+        return left / right;
     }
     [HttpGet("modulo")]
     public decimal Modulo([FromQuery] decimal left, [FromQuery] decimal right)
